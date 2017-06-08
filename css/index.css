@@ -1,0 +1,620 @@
+html, body {
+  height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.ibmnav {
+  width: 100%;
+  height: 51px; }
+  .ibmnav .ibmlogo {
+    font-family: "iconfont";
+    font-size: 26px;
+    float: left;
+    margin-left: 20px;
+    height: 100%;
+    line-height: 51px;
+    position: relative;
+    overflow: hidden; }
+    .ibmnav .ibmlogo:hover .firstline {
+      top: 47px; }
+    .ibmnav .ibmlogo .firstline {
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: blue;
+      position: absolute;
+      left: 0;
+      top: 51px;
+      transition: 0.5s; }
+  .ibmnav .navline {
+    height: 100%;
+    float: left; }
+    .ibmnav .navline li {
+      float: left;
+      position: relative;
+      margin-left: 20px;
+      height: 100%;
+      line-height: 51px;
+      overflow: hidden; }
+      .ibmnav .navline li:hover {
+        color: blue; }
+        .ibmnav .navline li:hover .throughline {
+          top: 47px; }
+      .ibmnav .navline li span {
+        font-family: "iconfont"; }
+      .ibmnav .navline li .throughline {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: blue;
+        position: absolute;
+        left: 0;
+        top: 51px;
+        transition: 0.5s; }
+  .ibmnav .Marketplace {
+    height: 32px;
+    width: 106px;
+    border: 1px solid #4178be;
+    color: #4178be;
+    text-align: center;
+    line-height: 32px;
+    float: right;
+    margin: 8px 20px auto auto;
+    transition: 0.5s; }
+    .ibmnav .Marketplace:hover {
+      color: white;
+      background: #4178be; }
+  .ibmnav .navsearch {
+    width: 219px;
+    line-height: 51px;
+    height: 100%;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    float: right; }
+    .ibmnav .navsearch input[type=text] {
+      border: none;
+      outline: none;
+      height: 24px;
+      width: 180px;
+      font-size: 16px; }
+    .ibmnav .navsearch span {
+      font-family: "iconfont";
+      font-size: 24px;
+      height: 100%;
+      width: 34px;
+      text-align: center;
+      display: inline-block; }
+  .ibmnav .icon {
+    width: 110px;
+    height: 100%;
+    float: right;
+    position: relative; }
+    .ibmnav .icon .signin {
+      position: absolute;
+      top: 51px;
+      right: 60px;
+      background: white;
+      display: none;
+      transition: 0.5s; }
+      .ibmnav .icon .signin li {
+        border: 1px solid gray;
+        height: 40px;
+        width: 200px;
+        line-height: 40px;
+        margin-left: 0PX;
+        text-align: left;
+        text-indent: 10px; }
+        .ibmnav .icon .signin li:hover {
+          background: blue; }
+      .ibmnav .icon .signin .signinfir {
+        border-bottom: none; }
+    .ibmnav .icon .iconthefirst:hover .signin {
+      display: block; }
+    .ibmnav .icon li {
+      height: 100%;
+      margin-left: 20px;
+      float: left;
+      text-align: center;
+      line-height: 51px;
+      position: relative;
+      overflow: hidden; }
+      .ibmnav .icon li:hover .sonicon {
+        color: blue; }
+      .ibmnav .icon li:hover .thirdline {
+        top: 47px; }
+      .ibmnav .icon li .sonicon {
+        font-family: "iconfont";
+        font-size: 26px;
+        color: black; }
+      .ibmnav .icon li .thirdline {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: blue;
+        position: absolute;
+        left: 0;
+        top: 51px;
+        transition: 0.5s; }
+
+.dropdownlist {
+  width: 100%;
+  height: 90%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 51px; }
+  .dropdownlist .droplistleft {
+    width: 35%;
+    height: 100%;
+    background: #F4F4F3;
+    float: left; }
+    .dropdownlist .droplistleft .leftcontent {
+      margin-left: 10%;
+      width: 85%; }
+      .dropdownlist .droplistleft .leftcontent li {
+        width: 100%;
+        height: 50px;
+        line-height: 50px; }
+      .dropdownlist .droplistleft .leftcontent .nospecial {
+        font-size: 16px;
+        font-weight: bold;
+        text-indent: 10px; }
+      .dropdownlist .droplistleft .leftcontent .withtopbor {
+        margin-top: 5px;
+        border-top: 1px solid darkgray; }
+      .dropdownlist .droplistleft .leftcontent .withspecial {
+        font-size: 20px;
+        text-indent: 30px; }
+        .dropdownlist .droplistleft .leftcontent .withspecial span {
+          font-family: "iconfont";
+          float: right;
+          margin-right: 10px;
+          color: white;
+          display: none; }
+  .dropdownlist .droplistright {
+    width: 65%;
+    height: 100%;
+    background: white;
+    float: right; }
+    .dropdownlist .droplistright .specialpage {
+      padding: 30px; }
+      .dropdownlist .droplistright .specialpage h3 {
+        font-size: 40px;
+        padding-bottom: 30px; }
+        .dropdownlist .droplistright .specialpage h3 a {
+          color: #3b6caa; }
+      .dropdownlist .droplistright .specialpage .specialpagedetails {
+        width: 100%;
+        background: red; }
+        .dropdownlist .droplistright .specialpage .specialpagedetails .detailsleft {
+          float: left;
+          width: 400px; }
+          .dropdownlist .droplistright .specialpage .specialpagedetails .detailsleft p {
+            font-size: 16px; }
+          .dropdownlist .droplistright .specialpage .specialpagedetails .detailsleft ul li {
+            font-size: 18px;
+            margin: 20px auto; }
+            .dropdownlist .droplistright .specialpage .specialpagedetails .detailsleft ul li a {
+              color: #3b6caa; }
+        .dropdownlist .droplistright .specialpage .specialpagedetails .detailsright {
+          float: left;
+          width: 400px; }
+          .dropdownlist .droplistright .specialpage .specialpagedetails .detailsright p {
+            margin: 10px; }
+            .dropdownlist .droplistright .specialpage .specialpagedetails .detailsright p a {
+              font-size: 14px;
+              color: #3b6caa; }
+
+.sidebar {
+  height: 100%;
+  width: 360px;
+  display: none;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #fff; }
+  .sidebar p {
+    width: 100%;
+    color: black;
+    border-bottom: 2px solid #323232;
+    overflow: hidden;
+    cursor: pointer; }
+    .sidebar p .multiplylogo {
+      font-family: "iconfont";
+      float: right;
+      font-size: 30px;
+      margin: 10px 10px 10px auto; }
+  .sidebar .sidebaritem {
+    width: 100%;
+    line-height: 40px;
+    cursor: pointer;
+    text-indent: 10px; }
+    .sidebar .sidebaritem:hover {
+      background: blue;
+      color: white; }
+    .sidebar .sidebaritem .pluslogo {
+      font-family: "iconfont";
+      font-weight: bold;
+      font-size: 20px;
+      float: right;
+      margin-right: 20px; }
+    .sidebar .sidebaritem .minuslogo {
+      font-family: "iconfont";
+      font-weight: bold;
+      font-size: 20px;
+      float: right;
+      display: none;
+      margin-right: 20px; }
+    .sidebar .sidebaritem ul {
+      background: pink;
+      text-indent: 30px;
+      display: none; }
+      .sidebar .sidebaritem ul a {
+        color: black; }
+        .sidebar .sidebaritem ul a:hover {
+          text-decoration: underline; }
+
+.hidepictureone {
+  width: 100%;
+  display: none; }
+
+.toppicture {
+  width: 100%;
+  background: url(../img/nav1.jpg) no-repeat center center;
+  overflow: hidden; }
+  .toppicture .toppart {
+    width: 100%; }
+    .toppicture .toppart .character {
+      margin-left: 20px;
+      width: 40%;
+      color: white; }
+      .toppicture .toppart .character h1 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 50px; }
+      .toppicture .toppart .character p {
+        font-size: 14px;
+        margin-top: 15px; }
+        .toppicture .toppart .character p a {
+          color: white;
+          margin-left: 10px; }
+          .toppicture .toppart .character p a:hover {
+            text-decoration: underline; }
+        .toppicture .toppart .character p span {
+          font-family: "iconfont";
+          font-size: 20px;
+          cursor: pointer; }
+  .toppicture .bottompart {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden; }
+    .toppicture .bottompart .iconsets {
+      width: 309px;
+      height: 55px;
+      float: right;
+      line-height: 55px;
+      background: rgba(0, 0, 0, 0.7);
+      overflow: hidden; }
+      .toppicture .bottompart .iconsets p {
+        color: white;
+        float: left;
+        margin-left: 15px; }
+        .toppicture .bottompart .iconsets p span {
+          font-family: "iconfont";
+          color: #c8c5c4;
+          font-size: 24px;
+          margin-left: 5px; }
+          .toppicture .bottompart .iconsets p span:hover {
+            color: white; }
+
+.middle-section {
+  width: 100%;
+  margin-top: 2px;
+  overflow: hidden; }
+  .middle-section .middlepart {
+    width: 25%;
+    height: 408px;
+    float: left;
+    cursor: pointer; }
+    .middle-section .middlepart img {
+      width: 100%; }
+    .middle-section .middlepart h3 {
+      margin: 20px auto auto 15px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #3b6caa; }
+    .middle-section .middlepart p {
+      margin: 20px auto auto 15px;
+      font-size: 16px;
+      color: #3b6caa; }
+      .middle-section .middlepart p span {
+        font-family: "iconfont";
+        font-size: 20px;
+        margin-right: 10px; }
+  .middle-section .middlepart1 {
+    cursor: auto; }
+    .middle-section .middlepart1 p {
+      font-size: 30px; }
+  .middle-section .middlepart5 p {
+    color: white;
+    font-size: 30px; }
+  .middle-section .middlepart5 .theframework {
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    width: 140px;
+    margin: 20px auto auto 15px;
+    line-height: 40px;
+    text-align: center; }
+    .middle-section .middlepart5 .theframework:hover {
+      color: black;
+      background: white; }
+  .middle-section .middlepart6 h3 {
+    color: white; }
+  .middle-section .middlepart6 p {
+    color: white; }
+  .middle-section .middlepart7 h3 {
+    color: white; }
+  .middle-section .middlepart7 p {
+    color: white; }
+  .middle-section .middlepart8 h3 {
+    color: white; }
+  .middle-section .middlepart8 p {
+    color: white; }
+  .middle-section .middlepart9 p {
+    color: #008571;
+    font-size: 30px; }
+  .middle-section .middlepart9 .theframe {
+    border: 2px solid #008571;
+    color: #008571;
+    font-size: 14px;
+    width: 140px;
+    margin: 20px auto auto 15px;
+    line-height: 40px;
+    text-align: center; }
+    .middle-section .middlepart9 .theframe:hover {
+      color: black;
+      background: #008571; }
+  .middle-section .last {
+    height: 491px; }
+
+.middle-second {
+  width: 100%;
+  background: #4178be;
+  overflow: hidden; }
+  .middle-second .secondcontent {
+    float: left; }
+  .middle-second .secondcontent1 {
+    width: 25%;
+    color: white;
+    font-size: 26px; }
+    .middle-second .secondcontent1 p {
+      margin-left: 20px; }
+    .middle-second .secondcontent1 p:nth-child(1) {
+      margin-top: 90px; }
+  .middle-second .secondcontentsame {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 24%; }
+    .middle-second .secondcontentsame img {
+      width: 40px;
+      margin: 20px auto auto 10px; }
+    .middle-second .secondcontentsame h4 {
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      margin-left: 10px; }
+      .middle-second .secondcontentsame h4:hover {
+        text-decoration: underline; }
+    .middle-second .secondcontentsame p {
+      font-size: 14px;
+      color: white;
+      margin: 5px auto auto 10px; }
+
+.hidepicturetwo {
+  width: 100%;
+  display: none; }
+
+.bottom-picture {
+  width: 100%;
+  overflow: hidden;
+  background: url(../img/story.jpg) no-repeat center center; }
+  .bottom-picture .bottomcontent {
+    width: 50%;
+    padding: 50px 0px;
+    color: white; }
+    .bottom-picture .bottomcontent h2 {
+      font-size: 30px;
+      font-weight: 500;
+      margin: 20px auto auto 20px; }
+    .bottom-picture .bottomcontent p {
+      font-size: 14px;
+      margin: 20px auto auto 20px; }
+    .bottom-picture .bottomcontent .bottombtn {
+      width: 150px;
+      background: #323232;
+      text-align: center;
+      padding: 10px 0;
+      margin: 20px auto auto 20px; }
+      .bottom-picture .bottomcontent .bottombtn:hover {
+        background: black; }
+
+.middle-third {
+  width: 100%;
+  background: #777677;
+  overflow: hidden; }
+  .middle-third .thirdcontent {
+    float: left; }
+  .middle-third .thirdcontent1 {
+    width: 25%;
+    color: white; }
+    .middle-third .thirdcontent1 h1 {
+      font-size: 30px;
+      font-weight: 500;
+      margin: 90px auto auto 20px; }
+  .middle-third .thirdcontentsame {
+    padding-bottom: 50px;
+    padding-top: 30px;
+    width: 24%; }
+    .middle-third .thirdcontentsame img {
+      width: 40px;
+      margin: 20px auto auto 10px; }
+    .middle-third .thirdcontentsame h4 {
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      margin-left: 10px; }
+      .middle-third .thirdcontentsame h4:hover {
+        text-decoration: underline; }
+    .middle-third .thirdcontentsame p {
+      font-size: 14px;
+      color: white;
+      margin: 5px auto auto 10px; }
+
+.navigationlist {
+  width: 100%;
+  background: #f4f4f4;
+  overflow: hidden; }
+  .navigationlist .listitem {
+    width: 25%;
+    float: left; }
+    .navigationlist .listitem h5 {
+      margin: 40px auto auto 20px;
+      color: #464646;
+      font-size: 16px; }
+    .navigationlist .listitem ul li {
+      margin: 15px auto auto 20px; }
+      .navigationlist .listitem ul li a {
+        color: gray;
+        font-size: 14px; }
+        .navigationlist .listitem ul li a:hover {
+          color: #4178be;
+          text-decoration: underline; }
+  .navigationlist .listitem4 .pulldown {
+    height: 40px;
+    width: 80%;
+    border: 1px solid gray;
+    margin: 30px auto auto 20px;
+    box-sizing: border-box;
+    transition: 0.5s; }
+    .navigationlist .listitem4 .pulldown:hover {
+      border: 2px solid blue; }
+    .navigationlist .listitem4 .pulldown select {
+      height: 100%;
+      width: 100%;
+      text-indent: 10px;
+      font-size: 20px;
+      border: none; }
+  .navigationlist .bottomline {
+    width: 100%;
+    float: left;
+    margin-top: 40px; }
+    .navigationlist .bottomline .linecontent {
+      width: 95%;
+      margin: 2px auto auto 2.5%;
+      overflow: hidden;
+      border-top: 1px solid gray; }
+      .navigationlist .bottomline .linecontent ul {
+        float: left; }
+        .navigationlist .bottomline .linecontent ul li {
+          float: left;
+          margin-right: 20px;
+          line-height: 60px; }
+          .navigationlist .bottomline .linecontent ul li a {
+            color: gray; }
+            .navigationlist .bottomline .linecontent ul li a:hover {
+              color: #4178be;
+              text-decoration: underline; }
+      .navigationlist .bottomline .linecontent .thelabels {
+        float: right; }
+        .navigationlist .bottomline .linecontent .thelabels span {
+          font-family: "iconfont";
+          font-size: 22px;
+          margin-left: 10px;
+          line-height: 60px;
+          cursor: pointer; }
+        .navigationlist .bottomline .linecontent .thelabels .letter {
+          font-size: 16px;
+          color: black;
+          cursor: auto; }
+
+.gototoplabel {
+  cursor: pointer;
+  position: fixed;
+  right: -50px;
+  bottom: 70px;
+  border: 1px solid white;
+  background: #ececec;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%; }
+  .gototoplabel:hover {
+    background: black;
+    color: white; }
+  .gototoplabel span {
+    font-family: "iconfont";
+    font-size: 30px; }
+
+@media screen and (max-width: 1160px) {
+  .ibmnav .navline {
+    display: none; } }
+@media screen and (max-width: 1000px) {
+  .middle-section .middlepart {
+    width: 50%; } }
+@media screen and (max-width: 700px) {
+  .Marketplace {
+    display: none; }
+
+  .middle-section .middlepart {
+    width: 100%; }
+
+  .middle-second .secondcontent {
+    width: 100%; }
+
+  .middle-third .thirdcontent {
+    width: 100%; }
+
+  .navigationlist .listitem {
+    width: 100%; }
+
+  .hidepictureone {
+    display: block; }
+
+  .toppicture {
+    background: black; }
+    .toppicture .toppart .character {
+      width: 100%; }
+    .toppicture .bottompart .iconsets {
+      width: 100%;
+      height: auto; }
+
+  .hidepicturetwo {
+    display: block; }
+
+  .bottom-picture {
+    background: black; }
+    .bottom-picture .bottomcontent {
+      width: 100%; } }
+@media screen and (max-width: 520px) {
+  .navigationlist .bottomline .linecontent ul {
+    float: none; }
+
+  .navigationlist .bottomline .linecontent ul li {
+    float: none;
+    line-height: 40px; }
+
+  .navigationlist .bottomline .linecontent .thelabels {
+    float: none; } }
+
+/*# sourceMappingURL=index.css.map */
